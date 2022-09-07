@@ -4,53 +4,7 @@
       <%= image_tag('pin.png', id: 'filterPin') %>
       <div class="stickyFilter">
         <h3>Filtri</h3>
-        <div class="accordionFilter">
-          <div class="filterContent">
-            <div class="afLabel">
-              <h4>Tipo</h4>
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="afContent">
-              <p>#TODO: form</p>
-            </div>
-          </div>
-          <div class="filterContent">
-            <div class="afLabel">
-              <h4>Genere</h4>
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="afContent">
-              <p>#TODO: form</p>
-            </div>
-          </div>
-          <div class="filterContent">
-            <div class="afLabel">
-              <h4>Brand</h4>
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="afContent">
-              <p>#TODO: form</p>
-            </div>
-          </div>
-          <div class="filterContent">
-            <div class="afLabel">
-              <h4>Montatura</h4>
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="afContent">
-              <p>#TODO: form</p>
-            </div>
-          </div>
-          <div class="filterContent">
-            <div class="afLabel">
-              <h4>Prezzo</h4>
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="afContent">
-              <p>#TODO: form</p>
-            </div>
-          </div>
-        </div>
+        <%= render "filter_form" %>
       </div>
     </div>
     <div class="indexRight">

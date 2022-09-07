@@ -1,0 +1,23 @@
+<%= form_tag glasses_path, method: :get do %>
+  <%= text_field_tag :type,
+    params[:type],
+    placeholder: "Tipo"
+  %>
+  <%= text_field_tag :gender,
+    params[:gender],
+    placeholder: "Genere"
+  %>
+  <%= text_field_tag :brand,
+    params[:brand],
+    placeholder: "Brand"
+  %>
+  <%= text_field_tag :frame,
+    params[:frame],
+    placeholder: "Montatura"
+  %>
+  <%= text_field_tag :maxprice,
+    params[:maxprice],
+    placeholder: "Prezzo massimo"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>

@@ -34,6 +34,7 @@ seed_csv("vogue")
 
 puts 'Loading images...'
 Glass.all.each do |glass|
+
   glass.photos.attach(io: File.open("./app/assets/images/#{glass.brand.downcase}/#{glass.sku}_01.png"), filename: "#{glass.sku}_01.png", content_type: "image/png")
   glass.photos.attach(io: File.open("./app/assets/images/#{glass.brand.downcase}/#{glass.sku}_02.png"), filename: "#{glass.sku}_02.png", content_type: "image/png")
   glass.photos.attach(io: File.open("./app/assets/images/#{glass.brand.downcase}/#{glass.sku}_03.png"), filename: "#{glass.sku}_03.png", content_type: "image/png")

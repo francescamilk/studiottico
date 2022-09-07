@@ -27,7 +27,6 @@
 .compoRight {
   display: grid; 
   grid-template-columns: repeat(5, 1fr); 
-  grid-template-rows: repeat(5, 1fr); 
   margin: $smallSpace 0;
 }
 
@@ -75,9 +74,9 @@
 // Flip card
 .cardFront, 
 .cardBack {
-  overflow:hidden;
-  backface-visibility:hidden;
-  position:absolute;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
   transition: transform .5s linear;
 }
 

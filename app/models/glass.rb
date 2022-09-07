@@ -6,15 +6,15 @@ class Glass < ApplicationRecord
 
   # scope :new_arrived, -> { order(created_at: desc) }
 
-  scope :sun, -> { where(sunglasses: true) }
-  scope :sight, -> { where(sunglasses: false) }
+  scope :sun,     -> { where(sunglasses: true) }
+  scope :sight,   -> { where(sunglasses: false) }
 
-  scope :women, -> { where(woman: true)}
-  scope :men, -> { where(woman: false)}
+  scope :women,   -> { where(woman: true)}
+  scope :men,     -> { where(woman: false)}
 
-  scope :armani, -> { where(brand: 'Armani') }
+  scope :armani,  -> { where(brand: 'Armani') }
   scope :miu_miu, -> { where(brand: 'Miu Miu') }
-  scope :vogue, -> { where(brand: 'Vogue') }
+  scope :vogue,   -> { where(brand: 'Vogue') }
 
   # scope :price_by_high, -> { order(price: :desc) } 
   # scope :price_by_low, -> { order(price: :asc) }
