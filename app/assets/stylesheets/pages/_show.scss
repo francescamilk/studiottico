@@ -1,5 +1,6 @@
 #show {
   height: 100vh;
+  margin-top: 8rem;
 
   @include flexBetween;
 }
@@ -8,6 +9,7 @@
   width: 55vw;
   // background: $SLblack;
   padding: 4rem;
+  margin-top: -15rem;
 
   @include flexAlignCenter;
 
@@ -27,6 +29,10 @@
   width: 45vw;
   padding: 4rem 6rem 4rem 4rem;
 
+  h1 {
+    margin-top: 5rem;
+  }
+
   h4 {
     letter-spacing: .1rem;
   }
@@ -42,7 +48,7 @@
 
 .glassIcons {
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 16rem;
 
   @include flexBetween;
   align-items: center;

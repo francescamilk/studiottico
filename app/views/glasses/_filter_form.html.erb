@@ -1,3 +1,4 @@
-<%= simple_form_for(@glasses, method: :get, url: glasses_path) do %>
-  <%= f.input :query %>
-<% end %>
+<form action="<%= glasses_path %>">
+  <input type="text" name="query" id="query">
+  <input type="submit" value="Submit">
+</form>
